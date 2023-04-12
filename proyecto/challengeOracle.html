@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Challenge Oracle Next Education</title>
+</head>
+<body>
+    <head class="contenedor_titulo">
+        <div class="contenido_titulo centrarContenido fondo">
+            <p>El decodificador</p>
+        </div>
+        
+    </head>
+    <div class="contenedor_inputs">
+        <div class="contenedor_encriptador">
+            <input id="encriptador" type="text" oninput="validacion(this)" placeholder="Escribe aquí tu mensaje secreto, pero no te preocupes, no lo leeremos... o tal vez sí">
+        </div>
+        <div class="contenedor_respuesta">
+            <input id="respuesta" type="text" placeholder="Aqui se mostrada tu codigo secreto - No te preocupes no estoy mirando">
+        </div>
+    </div>
+    <section class="contenedorReglas fondo">
+        <div class="reglas centrarContenido">
+            <p class="reglas_titulo">Reglas</p>
+            <div class="reglas_lista">
+                <ul>
+                    <li>Unicamente se retornaran letras minusculas</li>
+                    <li>No se tomaran en cuenta ni acentos ni caracteres especiales de toda clase</li>
+                    <li>Usa sabiamente este conocimiento: La fuerza esta en ti. A menos que estes en el lado oscuro, entonces estas por tu cuenta. 🙌✌️ &#x1F680</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="contenedor_botones fondo">
+        <button class="botones botonEncriptar fondoBotones"">Picame para encriptar</button>
+        <button class="botones botonDesencriptar fondoBotones">Picame para desencriptar</button>
+        <button class="botones botonClear fondoBotones">Borrar Texto</button>
+    </div>
+    <footer>
+        <div class="contenedor_listaFooter">
+            <ul>
+                <li>Diseñador: Luis Fernando Montoya Garcia</li>
+                <li>Contacto: montoyafernando1506@gmail.com</li>
+                <li>Ubicacion: Mexico</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./JS/appChallenge.js"></script>
+</body>
+</html>
