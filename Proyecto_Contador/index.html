@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Document</title>
+</head>
+<body class="flex">
+    <main class="contenedorPrincipal flex">
+        <h1 id="titulo" class="inicializacion">The counter  <span id="spanTitulo" class="spanTitulo">( Segundo Proyecto Publico )</span></h1>
+        <div id="contenido" class="contenidoPrincipal">
+
+            <div id="btn1" class="contador flex display">
+                <input id="pantalla1" type="text" disabled class="pantallaInput" value="0">
+                <div class="contadorBtns">
+                    <button class="btn restar1">Decrementar</button>
+                    <button class="btn reset1">Reset</button>
+                    <button class="btn sumar1">Incrementar</button>
+                </div>
+                <a id="close1" href="#" class="cerrar cerrar1">Cerrar</a>
+            </div>
+
+            <div id="btn2" class="contador flex display">
+                <input id="pantalla2" type="text" disabled class="pantallaInput" value="0">
+                <div class="contadorBtns">
+                    <button class="btn restar2">Decrementar</button>
+                    <button class="btn reset2">Reset</button>
+                    <button class="btn sumar2">Incrementar</button>
+                </div>
+                <a id="close2" href="#" class="cerrar cerrar2">Cerrar</a>
+            </div>
+
+            <div id="btn3" class="contador flex display">
+                <input id="pantalla3" type="text" disabled class="pantallaInput" value="0">
+                <div class="contadorBtns">
+                    <button class="btn restar3">Decrementar</button>
+                    <button class="btn reset3">Reset</button>
+                    <button class="btn sumar3">Incrementar</button>
+                </div>
+                <a id="close3" href="#" class="cerrar cerrar3">Cerrar</a>
+            </div>
+        </div>
+
+        <div id="btns" class="contenedorBtns display">
+            <button id="addBtn1" class="addButton" value="1">Agregar contador</button>
+            <button id="addBtn2" class="addButton" value="2">Agregar contador</button>
+            <button id="addBtn3" class="addButton" value="3">Agregar contador</button>
+        </div>
+        <button id="inicializar" class="inicializar">- Inicializar -</button>
+    </main>
+    <footer class="inf flex">
+        <div class="contenedorFooter">
+            <div class="infPresentacion">
+                <p>Hola mi nombre es Luis Fernando Montoya Garcia soy estudiante de Ing. en Desarrollo de Software actualmente estoy en el programa ONE de Oracle. Este es el segundo codigo que subo a esta plataforma es un contador como cualquier otro lo hice usando HTML - CSS - JavaScript</p>
+            </div>
+            <h1 class="titulo-contacto">Contacto</h1>
+            <div class="contacto">
+                <div class="icons">
+                    <a href="https://github.com/montoya150621/Mi_Primer_Portafolio.git" class="enlace-hitgub">
+                        <img src="./img/gitHub.png" alt="logo-gitHub">
+                    </a>
+                    <h2 class="subtituloContacto">Git-Hub</h2>
+                </div>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/luis-fernando-m-135096271/">
+                        <img src="./img/public.png" alt="logo-work">
+                    </a>
+                    <h2 class="subtituloContacto">Linkedin</h2>
+                </div>
+            </div>
+            <p class="codigoEnlace">El codigo con el que se realizo esta web lo podras encontrar en el enlace que te dejo con el nombre de Git-Hub unicamente tienes que darle click</p>
+        </div>
+    </footer>
+    <script src="./JS/app.js"></script>
+</body>
+</html>
