@@ -1,0 +1,143 @@
+*{ 
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --fuenteTitulos: 'Alkatra', cursive;
+    --texto: 'Edu NSW ACT Foundation', cursive;
+}
+body {
+    min-width: 400px;
+}
+/*Clases Globales*/
+.fondo{
+    background: #1a2a6c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.fondoBotones{
+    background: #159957;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.centrarContenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Titulo*/
+.contenido_titulo{
+    font-family: var(--texto);
+    height: 50px;
+    font-size: 30px;
+    color: white;
+}
+
+/*Inputs*/
+
+.contenedor_inputs {
+    display: flex;
+}
+.contenedor_encriptador{
+    width: 50%;
+    height: 450px;
+}
+.contenedor_respuesta{
+    width: 50%;
+    height: 450px;
+    background-color: blue;
+}
+#encriptador{
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    border: none;
+}
+#respuesta{
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    border: none;
+    border-left: 1px black solid;
+}
+/*Reglas*/
+.reglas{
+    height: 140px;
+    color: white;
+}  
+.reglas_titulo{
+    font-family: var(--texto);
+    font-size: 30px;
+}
+.reglas_lista li{
+    font-family: var(--texto);
+}
+
+/*Botones*/
+.contenedor_botones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+}
+.botones{
+    width: 215px;
+    height: 40px;
+    font-family: var(--texto);
+    border-radius: 30px;
+    border: none;
+}
+.botones:hover{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.4s ease;
+    font-weight: bold;
+}
+
+/*Footer*/
+.contenedor_listaFooter{
+    height: 70px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    font-size: 12px;
+    background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.contenedor_listaFooter ul{
+    list-style-type: none;
+}
+
+/******************** Media queries **********************/
+@media (max-width: 390px) {
+    .contenedor_inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+    #respuesta {
+        border: none;
+        border-top: 1px black solid;
+    }
+}
+
+@media (max-width: 440px) {
+    .contenedor_botones {
+        height: 140px;
+    }
+}
+
+
+.contenedor_botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
