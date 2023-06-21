@@ -114,3 +114,30 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
 .contenedor_listaFooter ul{
     list-style-type: none;
 }
+
+/******************** Media queries **********************/
+@media (max-width: 390px) {
+    .contenedor_inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+    #respuesta {
+        border: none;
+        border-top: 1px black solid;
+    }
+}
+
+@media (max-width: 440px) {
+    .contenedor_botones {
+        height: 140px;
+    }
+}
+
+
+.contenedor_botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
